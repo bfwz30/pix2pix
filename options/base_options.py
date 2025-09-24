@@ -56,6 +56,12 @@ class BaseOptions:
         # wandb parameters
         parser.add_argument("--use_wandb", action="store_true", help="if specified, then init wandb logging")
         parser.add_argument("--wandb_project_name", type=str, default="CycleGAN-and-pix2pix", help="specify wandb project name")
+        
+        parser.add_argument('--masks_dir', type=str, default='', help='path to masks for ROI loss')
+        parser.add_argument('--lambda_roi', type=float, default=0.0, help='weight for ROI (mask) L1 loss')
+        parser.add_argument('--lambda_bg',  type=float, default=0.0, help='weight for non-ROI fidelity loss')  # ← 新增
+        parser.add_argument('--use_mask_condition', action='store_true',
+                            help='if set, concatenate mask as an extra channel to A for both G and D')
         self.initialized = True
         return parser
 

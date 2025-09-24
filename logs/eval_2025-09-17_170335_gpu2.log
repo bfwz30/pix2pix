@@ -1,0 +1,2401 @@
+[2025年 09月 17日 星期三 17:03:36 CST] 评估观察者启动（GPU2）
+[2025年 09月 17日 星期三 18:02:37 CST] 评估 epoch 5
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 5                             	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep5                   	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:02:40 CST] 完成评估 epoch 5
+[2025年 09月 17日 星期三 18:09:40 CST] 评估 epoch 10
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 10                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep10                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:09:43 CST] 完成评估 epoch 10
+[2025年 09月 17日 星期三 18:17:43 CST] 评估 epoch 15
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 15                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep15                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:17:47 CST] 完成评估 epoch 15
+[2025年 09月 17日 星期三 18:24:47 CST] 评估 epoch 20
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 20                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep20                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:24:50 CST] 完成评估 epoch 20
+[2025年 09月 17日 星期三 18:31:50 CST] 评估 epoch 25
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 25                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep25                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:31:54 CST] 完成评估 epoch 25
+[2025年 09月 17日 星期三 18:39:54 CST] 评估 epoch 30
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 30                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep30                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:39:57 CST] 完成评估 epoch 30
+[2025年 09月 17日 星期三 18:46:57 CST] 评估 epoch 35
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 35                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep35                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:47:00 CST] 完成评估 epoch 35
+[2025年 09月 17日 星期三 18:54:00 CST] 评估 epoch 40
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 40                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep40                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 18:54:04 CST] 完成评估 epoch 40
+[2025年 09月 17日 星期三 19:02:04 CST] 评估 epoch 45
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 45                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep45                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:02:07 CST] 完成评估 epoch 45
+[2025年 09月 17日 星期三 19:09:07 CST] 评估 epoch 50
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 50                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep50                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:09:11 CST] 完成评估 epoch 50
+[2025年 09月 17日 星期三 19:16:11 CST] 评估 epoch 55
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 55                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep55                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:16:14 CST] 完成评估 epoch 55
+[2025年 09月 17日 星期三 19:23:14 CST] 评估 epoch 60
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 60                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep60                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:23:17 CST] 完成评估 epoch 60
+[2025年 09月 17日 星期三 19:31:17 CST] 评估 epoch 65
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 65                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep65                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:31:21 CST] 完成评估 epoch 65
+[2025年 09月 17日 星期三 19:38:21 CST] 评估 epoch 70
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 70                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep70                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:38:24 CST] 完成评估 epoch 70
+[2025年 09月 17日 星期三 19:45:24 CST] 评估 epoch 75
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 75                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep75                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:45:27 CST] 完成评估 epoch 75
+[2025年 09月 17日 星期三 19:53:27 CST] 评估 epoch 80
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 80                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep80                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 19:53:31 CST] 完成评估 epoch 80
+[2025年 09月 17日 星期三 20:00:31 CST] 评估 epoch 85
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 85                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep85                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:00:34 CST] 完成评估 epoch 85
+[2025年 09月 17日 星期三 20:07:34 CST] 评估 epoch 90
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 90                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep90                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:07:38 CST] 完成评估 epoch 90
+[2025年 09月 17日 星期三 20:14:38 CST] 评估 epoch 95
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 95                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep95                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:14:41 CST] 完成评估 epoch 95
+[2025年 09月 17日 星期三 20:22:41 CST] 评估 epoch 100
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 100                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep100                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:22:44 CST] 完成评估 epoch 100
+[2025年 09月 17日 星期三 20:29:44 CST] 评估 epoch 105
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 105                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep105                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:29:48 CST] 完成评估 epoch 105
+[2025年 09月 17日 星期三 20:36:48 CST] 评估 epoch 110
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 110                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep110                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:36:51 CST] 完成评估 epoch 110
+[2025年 09月 17日 星期三 20:44:51 CST] 评估 epoch 115
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 115                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep115                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:44:54 CST] 完成评估 epoch 115
+[2025年 09月 17日 星期三 20:51:54 CST] 评估 epoch 120
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 120                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep120                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:51:58 CST] 完成评估 epoch 120
+[2025年 09月 17日 星期三 20:58:58 CST] 评估 epoch 125
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 125                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep125                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 20:59:01 CST] 完成评估 epoch 125
+[2025年 09月 17日 星期三 21:07:01 CST] 评估 epoch 130
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 130                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep130                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:07:04 CST] 完成评估 epoch 130
+[2025年 09月 17日 星期三 21:14:04 CST] 评估 epoch 135
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 135                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep135                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:14:08 CST] 完成评估 epoch 135
+[2025年 09月 17日 星期三 21:21:08 CST] 评估 epoch 140
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 140                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep140                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:21:11 CST] 完成评估 epoch 140
+[2025年 09月 17日 星期三 21:28:11 CST] 评估 epoch 145
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 145                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep145                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:28:14 CST] 完成评估 epoch 145
+[2025年 09月 17日 星期三 21:39:14 CST] 评估 epoch 150
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 150                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep150                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:39:18 CST] 完成评估 epoch 150
+[2025年 09月 17日 星期三 21:47:18 CST] 评估 epoch 155
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 155                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep155                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:47:21 CST] 完成评估 epoch 155
+[2025年 09月 17日 星期三 21:54:21 CST] 评估 epoch 160
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 160                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep160                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 21:54:25 CST] 完成评估 epoch 160
+[2025年 09月 17日 星期三 22:01:25 CST] 评估 epoch 165
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 165                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep165                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:01:28 CST] 完成评估 epoch 165
+[2025年 09月 17日 星期三 22:09:28 CST] 评估 epoch 170
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 170                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep170                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:09:31 CST] 完成评估 epoch 170
+[2025年 09月 17日 星期三 22:18:32 CST] 评估 epoch 175
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 175                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep175                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:18:35 CST] 完成评估 epoch 175
+[2025年 09月 17日 星期三 22:30:35 CST] 评估 epoch 180
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 180                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep180                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:30:38 CST] 完成评估 epoch 180
+[2025年 09月 17日 星期三 22:41:38 CST] 评估 epoch 185
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 185                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep185                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:41:41 CST] 完成评估 epoch 185
+[2025年 09月 17日 星期三 22:48:42 CST] 评估 epoch 190
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 190                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep190                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:48:45 CST] 完成评估 epoch 190
+[2025年 09月 17日 星期三 22:56:45 CST] 评估 epoch 195
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 195                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep195                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 22:56:48 CST] 完成评估 epoch 195
+[2025年 09月 17日 星期三 23:03:48 CST] 评估 epoch 200
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 200                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep200                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+Traceback (most recent call last):
+  File "test.py", line 54, in <module>
+    dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
+  File "/data1/liutao/pix2pix/data/__init__.py", line 60, in create_dataset
+    data_loader = CustomDatasetDataLoader(opt)
+  File "/data1/liutao/pix2pix/data/__init__.py", line 76, in __init__
+    self.dataset = dataset_class(opt)
+  File "/data1/liutao/pix2pix/data/aligned_dataset.py", line 16, in __init__
+    self.AB_paths = sorted(make_dataset(self.dir_AB, opt.max_dataset_size))
+  File "/data1/liutao/pix2pix/data/image_folder.py", line 36, in make_dataset
+    assert dir_path.is_dir(), f"{dir} is not a valid directory"
+AssertionError: datasets/rhino_aligned/test is not a valid directory
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 17日 星期三 23:03:51 CST] 完成评估 epoch 200

@@ -1,0 +1,2281 @@
+[2025年 09月 18日 星期四 00:03:58 CST] 评估观察者启动（GPU2）
+[2025年 09月 18日 星期四 00:03:58 CST] 评估 epoch 5
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 5                             	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep5                   	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/5_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep5/rhino_pix2pix_roi/val_5
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:03 CST] 完成评估 epoch 5
+[2025年 09月 18日 星期四 00:04:03 CST] 评估 epoch 10
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 10                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep10                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/10_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep10/rhino_pix2pix_roi/val_10
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:08 CST] 完成评估 epoch 10
+[2025年 09月 18日 星期四 00:04:08 CST] 评估 epoch 15
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 15                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep15                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/15_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep15/rhino_pix2pix_roi/val_15
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:12 CST] 完成评估 epoch 15
+[2025年 09月 18日 星期四 00:04:12 CST] 评估 epoch 20
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 20                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep20                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/20_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep20/rhino_pix2pix_roi/val_20
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:17 CST] 完成评估 epoch 20
+[2025年 09月 18日 星期四 00:04:17 CST] 评估 epoch 25
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 25                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep25                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/25_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep25/rhino_pix2pix_roi/val_25
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:22 CST] 完成评估 epoch 25
+[2025年 09月 18日 星期四 00:04:22 CST] 评估 epoch 30
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 30                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep30                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/30_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep30/rhino_pix2pix_roi/val_30
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:27 CST] 完成评估 epoch 30
+[2025年 09月 18日 星期四 00:04:27 CST] 评估 epoch 35
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 35                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep35                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/35_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep35/rhino_pix2pix_roi/val_35
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:32 CST] 完成评估 epoch 35
+[2025年 09月 18日 星期四 00:04:32 CST] 评估 epoch 40
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 40                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep40                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/40_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep40/rhino_pix2pix_roi/val_40
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:36 CST] 完成评估 epoch 40
+[2025年 09月 18日 星期四 00:04:36 CST] 评估 epoch 45
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 45                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep45                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/45_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep45/rhino_pix2pix_roi/val_45
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:41 CST] 完成评估 epoch 45
+[2025年 09月 18日 星期四 00:04:41 CST] 评估 epoch 50
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 50                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep50                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/50_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep50/rhino_pix2pix_roi/val_50
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:46 CST] 完成评估 epoch 50
+[2025年 09月 18日 星期四 00:04:46 CST] 评估 epoch 55
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 55                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep55                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/55_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep55/rhino_pix2pix_roi/val_55
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:51 CST] 完成评估 epoch 55
+[2025年 09月 18日 星期四 00:04:51 CST] 评估 epoch 60
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 60                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep60                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/60_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep60/rhino_pix2pix_roi/val_60
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:04:55 CST] 完成评估 epoch 60
+[2025年 09月 18日 星期四 00:04:55 CST] 评估 epoch 65
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 65                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep65                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/65_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep65/rhino_pix2pix_roi/val_65
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:00 CST] 完成评估 epoch 65
+[2025年 09月 18日 星期四 00:05:00 CST] 评估 epoch 70
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 70                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep70                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/70_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep70/rhino_pix2pix_roi/val_70
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:05 CST] 完成评估 epoch 70
+[2025年 09月 18日 星期四 00:05:05 CST] 评估 epoch 75
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 75                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep75                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/75_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep75/rhino_pix2pix_roi/val_75
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:10 CST] 完成评估 epoch 75
+[2025年 09月 18日 星期四 00:05:10 CST] 评估 epoch 80
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 80                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep80                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/80_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep80/rhino_pix2pix_roi/val_80
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:15 CST] 完成评估 epoch 80
+[2025年 09月 18日 星期四 00:05:15 CST] 评估 epoch 85
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 85                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep85                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/85_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep85/rhino_pix2pix_roi/val_85
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:19 CST] 完成评估 epoch 85
+[2025年 09月 18日 星期四 00:05:19 CST] 评估 epoch 90
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 90                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep90                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/90_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep90/rhino_pix2pix_roi/val_90
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:24 CST] 完成评估 epoch 90
+[2025年 09月 18日 星期四 00:05:24 CST] 评估 epoch 95
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 95                            	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep95                  	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/95_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep95/rhino_pix2pix_roi/val_95
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:29 CST] 完成评估 epoch 95
+[2025年 09月 18日 星期四 00:05:29 CST] 评估 epoch 100
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 100                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep100                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/100_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep100/rhino_pix2pix_roi/val_100
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:34 CST] 完成评估 epoch 100
+[2025年 09月 18日 星期四 00:05:34 CST] 评估 epoch 105
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 105                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep105                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/105_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep105/rhino_pix2pix_roi/val_105
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:39 CST] 完成评估 epoch 105
+[2025年 09月 18日 星期四 00:05:39 CST] 评估 epoch 110
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 110                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep110                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/110_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep110/rhino_pix2pix_roi/val_110
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:43 CST] 完成评估 epoch 110
+[2025年 09月 18日 星期四 00:05:43 CST] 评估 epoch 115
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 115                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep115                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/115_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep115/rhino_pix2pix_roi/val_115
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:48 CST] 完成评估 epoch 115
+[2025年 09月 18日 星期四 00:05:48 CST] 评估 epoch 120
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 120                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep120                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/120_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep120/rhino_pix2pix_roi/val_120
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:53 CST] 完成评估 epoch 120
+[2025年 09月 18日 星期四 00:05:53 CST] 评估 epoch 125
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 125                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep125                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/125_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep125/rhino_pix2pix_roi/val_125
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:05:58 CST] 完成评估 epoch 125
+[2025年 09月 18日 星期四 00:05:58 CST] 评估 epoch 130
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 130                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep130                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/130_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep130/rhino_pix2pix_roi/val_130
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:03 CST] 完成评估 epoch 130
+[2025年 09月 18日 星期四 00:06:03 CST] 评估 epoch 135
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 135                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep135                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/135_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep135/rhino_pix2pix_roi/val_135
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:07 CST] 完成评估 epoch 135
+[2025年 09月 18日 星期四 00:06:07 CST] 评估 epoch 140
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 140                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep140                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/140_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep140/rhino_pix2pix_roi/val_140
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:12 CST] 完成评估 epoch 140
+[2025年 09月 18日 星期四 00:06:12 CST] 评估 epoch 145
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 145                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep145                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/145_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep145/rhino_pix2pix_roi/val_145
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:17 CST] 完成评估 epoch 145
+[2025年 09月 18日 星期四 00:06:17 CST] 评估 epoch 150
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 150                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep150                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/150_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep150/rhino_pix2pix_roi/val_150
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:22 CST] 完成评估 epoch 150
+[2025年 09月 18日 星期四 00:06:22 CST] 评估 epoch 155
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 155                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep155                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/155_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep155/rhino_pix2pix_roi/val_155
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:27 CST] 完成评估 epoch 155
+[2025年 09月 18日 星期四 00:06:27 CST] 评估 epoch 160
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 160                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep160                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/160_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep160/rhino_pix2pix_roi/val_160
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:31 CST] 完成评估 epoch 160
+[2025年 09月 18日 星期四 00:06:31 CST] 评估 epoch 165
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 165                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep165                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/165_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep165/rhino_pix2pix_roi/val_165
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:36 CST] 完成评估 epoch 165
+[2025年 09月 18日 星期四 00:06:36 CST] 评估 epoch 170
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 170                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep170                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/170_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep170/rhino_pix2pix_roi/val_170
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:41 CST] 完成评估 epoch 170
+[2025年 09月 18日 星期四 00:06:41 CST] 评估 epoch 175
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 175                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep175                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/175_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep175/rhino_pix2pix_roi/val_175
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:46 CST] 完成评估 epoch 175
+[2025年 09月 18日 星期四 00:06:46 CST] 评估 epoch 180
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 180                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep180                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/180_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep180/rhino_pix2pix_roi/val_180
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:51 CST] 完成评估 epoch 180
+[2025年 09月 18日 星期四 00:06:51 CST] 评估 epoch 185
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 185                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep185                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/185_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep185/rhino_pix2pix_roi/val_185
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:06:55 CST] 完成评估 epoch 185
+[2025年 09月 18日 星期四 00:06:55 CST] 评估 epoch 190
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 190                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep190                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/190_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep190/rhino_pix2pix_roi/val_190
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:07:00 CST] 完成评估 epoch 190
+[2025年 09月 18日 星期四 00:07:00 CST] 评估 epoch 195
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 195                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep195                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/195_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep195/rhino_pix2pix_roi/val_195
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:07:05 CST] 完成评估 epoch 195
+[2025年 09月 18日 星期四 00:07:05 CST] 评估 epoch 200
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: checkpoints                   	[default: ./checkpoints]
+                crop_size: 256                           
+                 dataroot: datasets/rhino_aligned        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 200                           	[default: latest]
+                     eval: False                         
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+               lambda_roi: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+                masks_dir:                               
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: test]
+               n_layers_D: 3                             
+                     name: rhino_pix2pix_roi             	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: batch                         
+                 num_test: -1                            	[default: 50]
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: val                           	[default: test]
+               preprocess: none                          	[default: resize_and_crop]
+              results_dir: results/ep200                 	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [AlignedDataset] was created
+model [Pix2PixModel] was created
+Initialized with device cuda:0
+initialize network with normal
+loading the model from checkpoints/rhino_pix2pix_roi/200_net_G.pth
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.414 M
+-----------------------------------------------
+creating web directory results/ep200/rhino_pix2pix_roi/val_200
+Traceback (most recent call last):
+  File "tools/evaluate.py", line 7, in <module>
+    import torch, lpips
+ModuleNotFoundError: No module named 'lpips'
+[2025年 09月 18日 星期四 00:07:10 CST] 完成评估 epoch 200

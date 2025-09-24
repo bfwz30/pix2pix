@@ -1,0 +1,10 @@
+nohup: ignoring input
+[2025年 09月 17日 星期三 16:51:17 CST] which python: /home/omnisky/anaconda3/envs/liutao/bin/python
+Python 3.8.20
+torch 1.13.1+cu116 python 3.8.20 cuda? True
+[2025年 09月 17日 星期三 16:51:18 CST] 监控 GPU 2，阈值 4000 MiB；项目: /data1/liutao/pix2pix
+[2025年 09月 17日 星期三 16:51:18 CST] GPU2 空闲，显存 3891 MiB，开始训练…
+[2025年 09月 17日 星期三 16:51:18 CST] 训练已启动：PID=4880，日志：logs/train_2025-09-17_165117_gpu2.log
+[2025年 09月 17日 星期三 16:51:18 CST] 评估观察者已启动：PID=4884，日志：logs/eval_2025-09-17_165117_gpu2.log
+[提示] 查看训练日志：tail -f logs/train_2025-09-17_165117_gpu2.log
+[提示] 查看评估日志：tail -f logs/eval_2025-09-17_165117_gpu2.log

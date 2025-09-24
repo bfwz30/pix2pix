@@ -1,0 +1,641 @@
+[2025年 09月 17日 星期三 16:05:53 CST] 评估观察者启动（GPU2）
+[2025年 09月 17日 星期三 18:02:53 CST] 评估 epoch 5
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:02:53 CST] 完成评估 epoch 5
+[2025年 09月 17日 星期三 18:09:53 CST] 评估 epoch 10
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:09:53 CST] 完成评估 epoch 10
+[2025年 09月 17日 星期三 18:17:53 CST] 评估 epoch 15
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:17:53 CST] 完成评估 epoch 15
+[2025年 09月 17日 星期三 18:24:53 CST] 评估 epoch 20
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:24:53 CST] 完成评估 epoch 20
+[2025年 09月 17日 星期三 18:31:53 CST] 评估 epoch 25
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:31:53 CST] 完成评估 epoch 25
+[2025年 09月 17日 星期三 18:39:53 CST] 评估 epoch 30
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:39:54 CST] 完成评估 epoch 30
+[2025年 09月 17日 星期三 18:46:54 CST] 评估 epoch 35
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:46:54 CST] 完成评估 epoch 35
+[2025年 09月 17日 星期三 18:53:54 CST] 评估 epoch 40
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 18:53:54 CST] 完成评估 epoch 40
+[2025年 09月 17日 星期三 19:01:54 CST] 评估 epoch 45
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:01:54 CST] 完成评估 epoch 45
+[2025年 09月 17日 星期三 19:08:54 CST] 评估 epoch 50
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:08:54 CST] 完成评估 epoch 50
+[2025年 09月 17日 星期三 19:15:54 CST] 评估 epoch 55
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:15:54 CST] 完成评估 epoch 55
+[2025年 09月 17日 星期三 19:23:54 CST] 评估 epoch 60
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:23:54 CST] 完成评估 epoch 60
+[2025年 09月 17日 星期三 19:30:54 CST] 评估 epoch 65
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:30:54 CST] 完成评估 epoch 65
+[2025年 09月 17日 星期三 19:37:54 CST] 评估 epoch 70
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:37:54 CST] 完成评估 epoch 70
+[2025年 09月 17日 星期三 19:45:54 CST] 评估 epoch 75
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:45:54 CST] 完成评估 epoch 75
+[2025年 09月 17日 星期三 19:52:55 CST] 评估 epoch 80
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:52:55 CST] 完成评估 epoch 80
+[2025年 09月 17日 星期三 19:59:55 CST] 评估 epoch 85
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 19:59:55 CST] 完成评估 epoch 85
+[2025年 09月 17日 星期三 20:07:55 CST] 评估 epoch 90
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:07:55 CST] 完成评估 epoch 90
+[2025年 09月 17日 星期三 20:14:55 CST] 评估 epoch 95
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:14:55 CST] 完成评估 epoch 95
+[2025年 09月 17日 星期三 20:22:55 CST] 评估 epoch 100
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:22:55 CST] 完成评估 epoch 100
+[2025年 09月 17日 星期三 20:29:55 CST] 评估 epoch 105
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:29:55 CST] 完成评估 epoch 105
+[2025年 09月 17日 星期三 20:36:55 CST] 评估 epoch 110
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:36:55 CST] 完成评估 epoch 110
+[2025年 09月 17日 星期三 20:44:55 CST] 评估 epoch 115
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:44:55 CST] 完成评估 epoch 115
+[2025年 09月 17日 星期三 20:51:55 CST] 评估 epoch 120
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:51:56 CST] 完成评估 epoch 120
+[2025年 09月 17日 星期三 20:58:56 CST] 评估 epoch 125
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 20:58:56 CST] 完成评估 epoch 125
+[2025年 09月 17日 星期三 21:06:56 CST] 评估 epoch 130
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:06:56 CST] 完成评估 epoch 130
+[2025年 09月 17日 星期三 21:13:56 CST] 评估 epoch 135
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:13:56 CST] 完成评估 epoch 135
+[2025年 09月 17日 星期三 21:20:56 CST] 评估 epoch 140
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:20:56 CST] 完成评估 epoch 140
+[2025年 09月 17日 星期三 21:28:56 CST] 评估 epoch 145
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:28:56 CST] 完成评估 epoch 145
+[2025年 09月 17日 星期三 21:38:56 CST] 评估 epoch 150
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:38:56 CST] 完成评估 epoch 150
+[2025年 09月 17日 星期三 21:46:56 CST] 评估 epoch 155
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:46:56 CST] 完成评估 epoch 155
+[2025年 09月 17日 星期三 21:53:56 CST] 评估 epoch 160
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 21:53:56 CST] 完成评估 epoch 160
+[2025年 09月 17日 星期三 22:01:56 CST] 评估 epoch 165
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:01:57 CST] 完成评估 epoch 165
+[2025年 09月 17日 星期三 22:08:57 CST] 评估 epoch 170
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:08:57 CST] 完成评估 epoch 170
+[2025年 09月 17日 星期三 22:17:57 CST] 评估 epoch 175
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:17:57 CST] 完成评估 epoch 175
+[2025年 09月 17日 星期三 22:29:57 CST] 评估 epoch 180
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:29:57 CST] 完成评估 epoch 180
+[2025年 09月 17日 星期三 22:40:57 CST] 评估 epoch 185
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:40:57 CST] 完成评估 epoch 185
+[2025年 09月 17日 星期三 22:48:57 CST] 评估 epoch 190
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:48:57 CST] 完成评估 epoch 190
+[2025年 09月 17日 星期三 22:55:57 CST] 评估 epoch 195
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 22:55:57 CST] 完成评估 epoch 195
+[2025年 09月 17日 星期三 23:03:57 CST] 评估 epoch 200
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/test.py", line 32, in <module>
+    from options.test_options import TestOptions
+  File "/data1/liutao/pix2pix/options/test_options.py", line 1, in <module>
+    from .base_options import BaseOptions
+  File "/data1/liutao/pix2pix/options/base_options.py", line 3, in <module>
+    from util import util
+  File "/data1/liutao/pix2pix/util/util.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/data1/liutao/pix2pix/tools/evaluate.py", line 4, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+[2025年 09月 17日 星期三 23:03:57 CST] 完成评估 epoch 200

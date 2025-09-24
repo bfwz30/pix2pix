@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "train.py", line 31, in <module>
+    opt = TrainOptions().parse()  # get training options
+  File "/data1/liutao/pix2pix/options/base_options.py", line 117, in parse
+    opt = self.gather_options()
+  File "/data1/liutao/pix2pix/options/base_options.py", line 70, in gather_options
+    parser = self.initialize(parser)
+  File "/data1/liutao/pix2pix/options/train_options.py", line 35, in initialize
+    self.parser.add_argument('--masks_dir', type=str, default='',
+AttributeError: 'TrainOptions' object has no attribute 'parser'
